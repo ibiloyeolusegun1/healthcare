@@ -17,7 +17,7 @@
     --white: #fff;
     --text-color: #aaa;
     --bg-color: #f0faf6;
-    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .07);
     --border: .1rem solid rgba(0,0,0,.1);
   }
 
@@ -29,6 +29,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    /* background: var(--white); */
     background: var(--white);
 }
 section{
@@ -41,8 +42,9 @@ h1{
 }
 p{
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: lighter;
     color: var(--text-color);
+    line-height: 1.6;
 }
 .btn, 
 .btn-outline{
@@ -68,6 +70,29 @@ p{
 .btn-outline:hover{
     background-color: var(--main-color);
     color: var(--white);
+}
+.section-title{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--black);
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+.section-title::after{
+    position: absolute;
+    content: '';
+    width: 4.5rem;
+    height: 0.25rem;
+    background-color: var(--black);
+    bottom: -2rem;
+    left: 8rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
 /*==================== Header Section ===================*/
@@ -138,7 +163,7 @@ header .nav-closeBtn{
 
 /*==================== Hero Section ===================*/
 #hero{
-    padding: 3vw 8vw 0 8vw;
+    padding: 5vw 8vw 0 8vw;
 }
 .hero{
     width: 100%;
@@ -150,6 +175,7 @@ header .nav-closeBtn{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: 100vh;
 }
 .hero .hero-box .hero-text{
     width: 45rem;
@@ -171,6 +197,33 @@ header .nav-closeBtn{
     width: 100%;
 }
 
+/*==================== Service Section ===================*/
+.service .service-detail{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.service .card{
+    background-color: var(--white);
+    border-radius: 20px;
+    flex: 0 0 31%;
+    max-width: 31%;
+    padding: 50px 30px 40px 30px;
+    box-shadow: var(--box-shadow);
+}
+.service .card h3{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.service .card p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
 
 
 
@@ -184,17 +237,27 @@ header .nav-closeBtn{
 
 
 @media only screen and (max-width: 1024px){
+
+    .section-title{
+        margin-top: 0rem;
+        margin-bottom: 45px;
+    }
+
     header{
         padding: 2vw 4vw 0vw 4vw;
     }
     #hero{
-        padding: 3vw 4vw 0 4vw;
+        padding: 5vw 4vw 4vw 4vw;
     }
     section{
         padding: 5vw 4vw 0 4vw;
     }
     .hero .hero-text h1{
         font-size: 2.2rem;
+    }
+
+    .service .service-detail{
+        max-width: 90%;
     }
 }
 
@@ -204,6 +267,9 @@ header .nav-closeBtn{
     }
     section{
         padding: 5vw 4vw 0 4vw;
+    }
+    .row{
+        gap: 2.5rem;
     }
     .hero .hero-box{
         padding-top: 60px;
@@ -217,12 +283,25 @@ header .nav-closeBtn{
     .hero .hero-box .hero-text h1{
         font-size: 3.5rem;
     }
+
+    .service .service-detail {
+        max-width: 90%;
+        margin-bottom: 38px;
+    }
     
 }
 
+
 @media only screen and (max-width: 768px){
     section{
-        padding: 5vw 2vw 0 2vw;
+        padding: 7vw 3vw 0 3vw;
+    }
+    .section-title{
+        margin-top: 85rem;
+        margin-bottom: 45px;
+    }
+    .row{
+        gap: 2rem;
     }
     header{
         display: flex;
@@ -292,10 +371,24 @@ header .nav-closeBtn{
     .hero .hero-box .image{
         width: 100%;
         margin-top: 5rem;
+        /* margin-bottom: -5rem; */
+    }
+
+    #service{
+        margin-top: -40rem;
+    }
+    .service .card{
+        flex: 0 0 48%;
+        max-width: 48%;
+        padding: 40px 20px 30px 20px;
     }
 }
 
 @media (max-width:600px){
+    .section-title{
+        margin-top: 65rem;
+        margin-bottom: 45px;
+    }
     .btn, 
     .btn-outline{
         padding: 10px 25px;
@@ -303,8 +396,25 @@ header .nav-closeBtn{
     .hero .hero-box .hero-text h1{
         font-size: 3.5rem;
     }
+
+    .service .service-detail {
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:540px){
+    #service{
+        padding-top: 20rem;
+    }
 }
 @media (max-width:450px){
+
+    .section-title{
+        margin-top: 40rem;
+        margin-bottom: 45px;
+    }
+
     header .logo{
         font-size: 2.1rem;
         font-weight: 600;
@@ -327,4 +437,56 @@ header .nav-closeBtn{
         font-size: 2.8rem;
     }
     
+
+    .service .card{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 40px 20px 30px 20px;
+    }
+    .service .service-detail {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:420px){
+    #service{
+        margin-top: -25rem;
+    }
+    .hero .hero-box {
+        margin-top: -10rem;
+    }
+    .hero .hero-box .image{
+        margin-top: -20rem;
+        margin-bottom: -50rem;
+    }
+    .hero{
+        width: 100%;
+        height: 100vh;
+    }
+    .hero .hero-box{
+        height: 90vh;
+    }
+    .hero .hero-box .hero-text{
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width:412px){
+    .hero .hero-box .image img {
+        margin-top: -10rem;
+    }
+    .section-title{
+        margin-top: 20rem;
+    }
+}
+@media (max-width:320px){
+    .hero .hero-box .hero-text{
+        margin-top: 10rem;
+    }
+    .hero .hero-box .image{
+        margin-top: 1rem;
+    }
+    .section-title{
+        margin-top: 40rem;
+    }
 }
