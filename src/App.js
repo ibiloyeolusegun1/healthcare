@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero";
+import Service from "./Component/Service";
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <React.Fragment>
       <Navbar />
       <Hero/>
+      <Service/>
     </React.Fragment>
   );
 }
