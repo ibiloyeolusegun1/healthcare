@@ -29,7 +29,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    /* background: var(--white); */
     background: var(--white);
 }
 section{
@@ -198,6 +197,9 @@ header .nav-closeBtn{
 }
 
 /*==================== Service Section ===================*/
+#service{
+    margin-top: 5rem;
+} 
 .service .service-detail{
     max-width: 70%;
     margin: 0 auto;
@@ -220,6 +222,10 @@ header .nav-closeBtn{
 .service .card p{
     font-size: 14px;
     font-weight: 300;
+}
+.service .service-btn{
+    margin-top: 6rem;
+    text-align: center;
 }
 
 
