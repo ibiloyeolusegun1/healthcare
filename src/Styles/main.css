@@ -29,7 +29,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    /* background: var(--white); */
     background: var(--white);
 }
 section{
@@ -198,6 +197,9 @@ header .nav-closeBtn{
 }
 
 /*==================== Service Section ===================*/
+#service{
+    margin-top: 5rem;
+} 
 .service .service-detail{
     max-width: 70%;
     margin: 0 auto;
@@ -221,6 +223,64 @@ header .nav-closeBtn{
     font-size: 14px;
     font-weight: 300;
 }
+.service .service-btn{
+    margin-top: 6rem;
+    text-align: center;
+}
+
+/*==================== Leading Section ===================*/
+#leading{
+    padding-top: 15rem;
+}
+.leading .mobile-container{
+    margin-top: 15rem;
+}
+.leading .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leading .row .image{
+    width: 50rem;
+    height: 45rem;
+}
+.leading .row .image img{
+    height: 100%;
+    width: 100%;
+}
+.leading .row .leading-text{
+    position: relative;
+    width: 380px;
+}
+.leading .row .leading-text h1{
+    font-size: 3.5rem;
+    font-weight: 550;
+    color: var(--black);
+    line-height: 1.5;
+    margin-bottom: 42px;
+}
+.leading .row .leading-text h1::after{
+    position: absolute;
+    content: '';
+    width: 4.5rem;
+    height: 0.2rem;
+    background-color: var(--black);
+    top: 12rem;
+    left: 0;
+}
+.leading .row .leading-text p{
+    font-size: 14px;
+    margin-bottom: 32px;
+    line-height: 2;
+    font-weight: lighter;
+}
+.btn-flex{
+    display: flex;
+    align-items: center;
+}
+.btn-flex span{
+    padding-right: 7px;
+}
 
 
 
@@ -234,7 +294,14 @@ header .nav-closeBtn{
 
 
 
-
+@media only screen and (max-width: 1140px){
+    header{
+        padding: 2vw 6vw 0vw 6vw;
+    }
+    section{
+        padding: 5vw 6vw 0 6vw;
+    }
+}
 
 @media only screen and (max-width: 1024px){
 
@@ -287,6 +354,14 @@ header .nav-closeBtn{
     .service .service-detail {
         max-width: 90%;
         margin-bottom: 38px;
+    }
+
+    .leading .row .image{
+        width: 45rem;
+        height: 40rem;
+    }
+    .leading .row .leading-text{
+        width: 40%;
     }
     
 }
@@ -382,6 +457,28 @@ header .nav-closeBtn{
         max-width: 48%;
         padding: 40px 20px 30px 20px;
     }
+
+    .leading .mobile-container .mobile-container{
+        text-align: center;
+    }
+    .leading .row .image{
+        width: 50rem;
+        height: 35rem;
+    }
+    .leading .row .leading-text{
+        width: 80%;
+    }
+    .leading .row .image{
+        width: 100%;
+        height: 100%;
+    }
+    .leading .row .leading-text{
+        width: 100%;
+    }
+    .leading .row .leading-text h1::after{
+        top: 7rem;
+        left: 0;
+    }
 }
 
 @media (max-width:600px){
@@ -401,11 +498,22 @@ header .nav-closeBtn{
         max-width: 90%;
         margin-bottom: 30px;
     }
+
+    
+   
+
 }
 
 @media (max-width:540px){
     #service{
         padding-top: 20rem;
+    }
+    .leading .row .leading-text h1{
+        font-size: 2.8rem;
+    }
+    .leading .row .leading-text h1::after{
+        top: 5rem;
+        left: 0;
     }
 }
 @media (max-width:450px){
@@ -478,7 +586,14 @@ header .nav-closeBtn{
     .section-title{
         margin-top: 20rem;
     }
+    
+    .leading .row .leading-text h1{
+        font-size: 2.2rem;
+    }
+
 }
+
+
 @media (max-width:320px){
     .hero .hero-box .hero-text{
         margin-top: 10rem;

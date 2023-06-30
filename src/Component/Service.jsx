@@ -51,6 +51,9 @@ function Service() {
                     </div>
                 </div>
             </div>
+            <div className="service-btn">
+                <button className="btn-outline">Learn more</button>
+            </div>
         </div>
     </section>
     );
