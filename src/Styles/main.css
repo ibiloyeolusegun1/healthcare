@@ -75,7 +75,7 @@ p{
     text-align: center;
     color: var(--black);
     position: relative;
-    width: 200px;
+    width: 500px;
     margin: 0 auto;
     margin-bottom: 45px;
 }
@@ -86,7 +86,7 @@ p{
     height: 0.25rem;
     background-color: var(--black);
     bottom: -2rem;
-    left: 8rem;
+    left: 23rem;
 }
 .row{
     display: flex;
@@ -228,7 +228,79 @@ header .nav-closeBtn{
     text-align: center;
 }
 
-
+/*==================== Customer Section ===================*/
+.customer .container{
+    background-color: var(--main-color);
+    padding: 40px 10px;
+    border-radius: 20px;
+    /* overflow-x: hidden; */
+    height: 33rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.container .row{
+    padding: 2rem 5rem 0 5rem;
+    margin-bottom: 20rem;
+}
+.customer .container h2{
+    color: #ecf3f7;
+}
+.customer .container h2::after{
+    content: '';
+    background-color: #ecf3f7;
+}
+.customer .container .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.customer .container .card-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 35%;
+    max-width: 35%;
+}
+.customer .container .card-inner img{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+}
+.customer .container .card-inner h2{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #f0faf6;
+    padding-bottom: 10px;
+}
+.customer .container .card-inner p{
+    color: #bed6df;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.customer .container .card-detail{
+    flex: 1 1 50%;
+    max-width: 50%;
+}
+.customer .container .card-detail p{
+    color: #bed6df;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.swiper-slide {
+   
+}
+.swiper-pagination-bullet{
+    margin-top: -20rem;
+}
 
 
 
