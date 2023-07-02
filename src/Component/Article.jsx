@@ -40,6 +40,9 @@ function Article() {
                         </div>
                     </div>
                 </div>
+                <div className="blog-btn">
+                    <button className="btn-outline">View all</button>
+                </div>
             </div>
         </section>
      );

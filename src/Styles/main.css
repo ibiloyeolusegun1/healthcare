@@ -327,6 +327,10 @@ header .nav-closeBtn{
     margin-right: 12px;
     font-size: 1.4rem;
 }
+.blog .blog-btn{
+    margin-top: 6rem;
+    text-align: center;
+}
 
 
 
