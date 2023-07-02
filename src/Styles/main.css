@@ -9,6 +9,7 @@
     scroll-behavior: smooth;
     border: none;
     outline: none;
+    transition: .3s ease-in-out;
 }
 
 :root{
@@ -282,6 +283,50 @@ header .nav-closeBtn{
     padding-right: 7px;
 }
 
+/*==================== Article Section ===================*/
+.blog .blog-card{
+    background-color: var(--white);
+    flex: 0 0 31%;
+    max-width: 31%;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+.blog .blog-card .image{
+    height: 24rem;
+    width: 100%;
+}
+.blog .blog-card:hover .image{
+    filter: grayscale(100);
+}
+.blog .blog-card .image img{
+    width: 100%;
+    height: 100%;
+}
+.blog .blog-card .blog-details{
+    background-color: var(--white);
+    padding: 25px 36px;
+    line-height: 1.5;
+}
+.blog .blog-card .blog-details h2{
+    font-size: 1.9rem;
+    color: #222;
+    margin-bottom: 1.1rem;
+}
+.blog .blog-card:hover h2{
+    color: var(--main-color);
+}
+.blog .blog-card .blog-details a{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: var(--main-color);
+    margin-top: 2.6rem;
+}
+.blog .blog-card .blog-details a span{
+    margin-right: 12px;
+    font-size: 1.4rem;
+}
 
 
 
@@ -479,6 +524,29 @@ header .nav-closeBtn{
         top: 7rem;
         left: 0;
     }
+
+    .blog .blog-card .blog-details{
+        padding: 10px 15px;
+    }
+    .blog .blog-card .blog-details h2{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    .blog .blog-card .image{
+        height: 20rem;
+    }
+    .blog .blog-card .blog-details p{
+        font-size: 1.4rem;
+    }
+    .blog .blog-card .blog-details a{
+        font-size: 1rem;
+        color: var(--main-color);
+        margin-top: 2.2rem;
+    }
+    .blog .blog-card .blog-details a span{
+        margin-right: 12px;
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width:600px){
@@ -499,6 +567,16 @@ header .nav-closeBtn{
         margin-bottom: 30px;
     }
 
+
+    .blog .blog-card{
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+    .blog .container .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
    
 
@@ -553,6 +631,15 @@ header .nav-closeBtn{
     }
     .service .service-detail {
         max-width: 100%;
+    }
+
+
+    .blog .blog-card{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .blog .blog-card .image{
+        height: 27rem;
     }
 }
 

@@ -3,6 +3,7 @@ import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero";
 import Service from "./Component/Service";
 import Leading from "./Component/Leading";
+import Article from "./Component/Article";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Hero/>
       <Service/>
       <Leading/>
+      <Article/>
     </React.Fragment>
   );
 }
