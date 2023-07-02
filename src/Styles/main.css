@@ -35,6 +35,9 @@ body{
 section{
     padding: 5vw 10vw 0 10vw;
 }
+footer{
+    padding: 5vw 10vw 4vw 10vw;
+}
 h1{
     font-size: 4rem;
     font-weight: 700;
@@ -329,6 +332,65 @@ header .nav-closeBtn{
 }
 
 
+footer{
+    background-color: var(--main-color);
+    margin-top: 5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .logo{
+    font-size: 2rem;
+    color: #ebf3ef;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+footer .logo span{
+    width: 32px;
+    height: 32px;
+    line-height: 40px;
+    background-color: var(--white);
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: 700;
+}
+footer .footer-box{
+    width: 18rem;
+}
+footer .f-width{
+    width: 35rem;
+}
+footer .footer-box h2{
+    font-size: 1.8rem;
+    color: #ebf3ef;
+    font-weight: lighter;
+    padding-bottom: 2rem;
+}
+footer .footer-box p{
+    list-style: none;
+    font-size: 1.5rem;
+    color: #cedfd5;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+footer .footer-box .a-link{
+    font-size: 1.5rem;
+    color: #cedfd5;
+    display: flex;
+    align-items: flex-start;
+    line-height: 2.5;
+}
+footer .footer-box .a-link:hover{
+    color: #fafafa;
+}
+
 
 
 
@@ -345,6 +407,9 @@ header .nav-closeBtn{
     }
     section{
         padding: 5vw 6vw 0 6vw;
+    }
+    footer{
+        padding: 5vw 6vw 4vw 6vw;
     }
 }
 
@@ -364,6 +429,9 @@ header .nav-closeBtn{
     section{
         padding: 5vw 4vw 0 4vw;
     }
+    footer{
+        padding: 5vw 4vw 3vw 4vw;
+    }
     .hero .hero-text h1{
         font-size: 2.2rem;
     }
@@ -379,6 +447,9 @@ header .nav-closeBtn{
     }
     section{
         padding: 5vw 4vw 0 4vw;
+    }
+    footer{
+        padding: 5vw 4vw 3vw 4vw;
     }
     .row{
         gap: 2.5rem;
@@ -415,6 +486,9 @@ header .nav-closeBtn{
 @media only screen and (max-width: 768px){
     section{
         padding: 7vw 3vw 0 3vw;
+    }
+    footer{
+        padding: 5vw 3vw 3vw 3vw;
     }
     .section-title{
         margin-top: 85rem;
@@ -547,6 +621,11 @@ header .nav-closeBtn{
         margin-right: 12px;
         font-size: 1.4rem;
     }
+
+
+    footer .footer-box .a-link{
+        line-height: 2.1;
+    }
 }
 
 @media (max-width:600px){
@@ -579,6 +658,22 @@ header .nav-closeBtn{
     }
     
    
+    footer .footer-box{
+        width: 18rem;
+    }
+    footer .f-width{
+        width: 30rem;
+    }
+    footer .footer-box h2{
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    footer .logo{
+        padding-top: 2.5rem;
+    }
+    footer .footer-box .a-link{
+        line-height: 1.9;
+    }
 
 }
 
@@ -640,6 +735,11 @@ header .nav-closeBtn{
     }
     .blog .blog-card .image{
         height: 27rem;
+    }
+
+
+    footer .f-width{
+        width: 100%;
     }
 }
 

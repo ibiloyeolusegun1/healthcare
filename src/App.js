@@ -4,6 +4,7 @@ import Hero from "./Component/Hero";
 import Service from "./Component/Service";
 import Leading from "./Component/Leading";
 import Article from "./Component/Article";
+import Footer from "./Component/Footer";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Service/>
       <Leading/>
       <Article/>
+      <Footer/>
     </React.Fragment>
   );
 }
