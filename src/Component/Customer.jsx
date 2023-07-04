@@ -1,14 +1,11 @@
 import React from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "../Styles/main.css";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-// import "swiper/swiper.min.css";
-// import "swiper/modules/pagination/pagination.min.css";
-
 
 
 
@@ -27,26 +24,24 @@ function Customer() {
                     }}
                     navigation={true}
                     modules={[Pagination, Navigation]}
-                    className="mySwiper"
+                    className="customer-Swiper"
                     >
+                    <SliderButtons/>
                     <SwiperSlide>
-                        <div className="row">
-                            <div className="card">
-                                <div className="card-inner">
-                                    <img src="./about-profile.png" alt="" />
-                                    <div className="card-inner-text">
-                                        <h2>Ibiloye Olusegun</h2>
-                                        <p>Founder QRC</p>
-                                    </div>
+                        <div className="card">
+                            <div className="card-inner">
+                                <img src="./about-profile.png" alt="" />
+                                <div className="card-inner-text">
+                                    <h2>Ibiloye Olusegun</h2>
+                                    <p>Founder QRC</p>
                                 </div>
-                                <div className="card-detail">
-                                    <p>"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls or administrative hassle) and securely"</p>
-                                </div>
+                            </div>
+                            <div className="card-detail">
+                                <p>"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls or administrative hassle) and securely"</p>
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="row">
                             <div className="card">
                                 <div className="card-inner">
                                     <img src="./about-profile.png" alt="" />
@@ -59,10 +54,8 @@ function Customer() {
                                     <p>"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls or administrative hassle) and securely"</p>
                                 </div>
                             </div>
-                        </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="row">
                             <div className="card">
                                 <div className="card-inner">
                                     <img src="./about-profile.png" alt="" />
@@ -75,10 +68,8 @@ function Customer() {
                                     <p>"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls or administrative hassle) and securely"</p>
                                 </div>
                             </div>
-                        </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="row">
                             <div className="card">
                                 <div className="card-inner">
                                     <img src="./about-profile.png" alt="" />
@@ -91,7 +82,6 @@ function Customer() {
                                     <p>"Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls or administrative hassle) and securely"</p>
                                 </div>
                             </div>
-                        </div>
                     </SwiperSlide>
                 </Swiper>
                    
@@ -101,3 +91,13 @@ function Customer() {
 }
 
 export default Customer;
+
+const SliderButtons = () =>{
+    const swiper = useSwiper();
+    return(
+        <div className="customer-button">
+            <button onClick={()=> swiper.slidePrev()}><FaArrowLeft/></button>
+            <button onClick={()=> swiper.slideNext()}><FaArrowRight/></button>
+        </div>
+    )
+}
