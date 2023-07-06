@@ -9,6 +9,7 @@
     scroll-behavior: smooth;
     border: none;
     outline: none;
+    transition: .3s ease-in-out;
 }
 
 :root{
@@ -33,6 +34,9 @@ body{
 }
 section{
     padding: 5vw 10vw 0 10vw;
+}
+footer{
+    padding: 5vw 10vw 4vw 10vw;
 }
 h1{
     font-size: 4rem;
@@ -228,6 +232,7 @@ header .nav-closeBtn{
     text-align: center;
 }
 
+
 /*==================== Customer Section ===================*/
 .customer{
     height: 80vh;
@@ -325,6 +330,168 @@ header .nav-closeBtn{
 }
 .customer-button button:focus{
     color: var(--main-color);
+=======
+/*==================== Leading Section ===================*/
+#leading{
+    padding-top: 15rem;
+}
+.leading .mobile-container{
+    margin-top: 15rem;
+}
+.leading .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leading .row .image{
+    width: 50rem;
+    height: 45rem;
+}
+.leading .row .image img{
+    height: 100%;
+    width: 100%;
+}
+.leading .row .leading-text{
+    position: relative;
+    width: 380px;
+}
+.leading .row .leading-text h1{
+    font-size: 3.5rem;
+    font-weight: 550;
+    color: var(--black);
+    line-height: 1.5;
+    margin-bottom: 42px;
+}
+.leading .row .leading-text h1::after{
+    position: absolute;
+    content: '';
+    width: 4.5rem;
+    height: 0.2rem;
+    background-color: var(--black);
+    top: 12rem;
+    left: 0;
+}
+.leading .row .leading-text p{
+    font-size: 14px;
+    margin-bottom: 32px;
+    line-height: 2;
+    font-weight: lighter;
+}
+.btn-flex{
+    display: flex;
+    align-items: center;
+}
+.btn-flex span{
+    padding-right: 7px;
+}
+
+/*==================== Article Section ===================*/
+.blog .blog-card{
+    background-color: var(--white);
+    flex: 0 0 31%;
+    max-width: 31%;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+.blog .blog-card .image{
+    height: 24rem;
+    width: 100%;
+}
+.blog .blog-card:hover .image{
+    filter: grayscale(100);
+}
+.blog .blog-card .image img{
+    width: 100%;
+    height: 100%;
+}
+.blog .blog-card .blog-details{
+    background-color: var(--white);
+    padding: 25px 36px;
+    line-height: 1.5;
+}
+.blog .blog-card .blog-details h2{
+    font-size: 1.9rem;
+    color: #222;
+    margin-bottom: 1.1rem;
+}
+.blog .blog-card:hover h2{
+    color: var(--main-color);
+}
+.blog .blog-card .blog-details a{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: var(--main-color);
+    margin-top: 2.6rem;
+}
+.blog .blog-card .blog-details a span{
+    margin-right: 12px;
+    font-size: 1.4rem;
+}
+.blog .blog-btn{
+    margin-top: 6rem;
+    text-align: center;
+}
+
+
+footer{
+    background-color: var(--main-color);
+    margin-top: 5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .logo{
+    font-size: 2rem;
+    color: #ebf3ef;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+footer .logo span{
+    width: 32px;
+    height: 32px;
+    line-height: 40px;
+    background-color: var(--white);
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: 700;
+}
+footer .footer-box{
+    width: 18rem;
+}
+footer .f-width{
+    width: 35rem;
+}
+footer .footer-box h2{
+    font-size: 1.8rem;
+    color: #ebf3ef;
+    font-weight: lighter;
+    padding-bottom: 2rem;
+}
+footer .footer-box p{
+    list-style: none;
+    font-size: 1.5rem;
+    color: #cedfd5;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+footer .footer-box .a-link{
+    font-size: 1.5rem;
+    color: #cedfd5;
+    display: flex;
+    align-items: flex-start;
+    line-height: 2.5;
+}
+footer .footer-box .a-link:hover{
+    color: #fafafa;
 }
 
 
@@ -337,7 +504,17 @@ header .nav-closeBtn{
 
 
 
-
+@media only screen and (max-width: 1140px){
+    header{
+        padding: 2vw 6vw 0vw 6vw;
+    }
+    section{
+        padding: 5vw 6vw 0 6vw;
+    }
+    footer{
+        padding: 5vw 6vw 4vw 6vw;
+    }
+}
 
 @media only screen and (max-width: 1024px){
 
@@ -355,6 +532,9 @@ header .nav-closeBtn{
     section{
         padding: 5vw 4vw 0 4vw;
     }
+    footer{
+        padding: 5vw 4vw 3vw 4vw;
+    }
     .hero .hero-text h1{
         font-size: 2.2rem;
     }
@@ -370,6 +550,9 @@ header .nav-closeBtn{
     }
     section{
         padding: 5vw 4vw 0 4vw;
+    }
+    footer{
+        padding: 5vw 4vw 3vw 4vw;
     }
     .row{
         gap: 2.5rem;
@@ -391,7 +574,7 @@ header .nav-closeBtn{
         max-width: 90%;
         margin-bottom: 38px;
     }
-
+  }
 
     .customer .container .card-inner{
         flex-direction: column;
@@ -409,6 +592,13 @@ header .nav-closeBtn{
     .customer .container .card-detail{
         flex: 0 0 65%;
         max-width: 65%;
+  }
+    .leading .row .image{
+        width: 45rem;
+        height: 40rem;
+    }
+    .leading .row .leading-text{
+        width: 40%;
     }
     
 }
@@ -417,6 +607,9 @@ header .nav-closeBtn{
 @media only screen and (max-width: 768px){
     section{
         padding: 7vw 3vw 0 3vw;
+    }
+    footer{
+        padding: 5vw 3vw 3vw 3vw;
     }
     .section-title{
         margin-top: 85rem;
@@ -542,6 +735,54 @@ header .nav-closeBtn{
     }
     .customer-button{
        display: none;
+    .leading .mobile-container .mobile-container{
+        text-align: center;
+    }
+    .leading .row .image{
+        width: 50rem;
+        height: 35rem;
+    }
+    .leading .row .leading-text{
+        width: 80%;
+    }
+    .leading .row .image{
+        width: 100%;
+        height: 100%;
+    }
+    .leading .row .leading-text{
+        width: 100%;
+    }
+    .leading .row .leading-text h1::after{
+        top: 7rem;
+        left: 0;
+    }
+
+    .blog .blog-card .blog-details{
+        padding: 10px 15px;
+    }
+    .blog .blog-card .blog-details h2{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    .blog .blog-card .image{
+        height: 20rem;
+    }
+    .blog .blog-card .blog-details p{
+        font-size: 1.4rem;
+    }
+    .blog .blog-card .blog-details a{
+        font-size: 1rem;
+        color: var(--main-color);
+        margin-top: 2.2rem;
+    }
+    .blog .blog-card .blog-details a span{
+        margin-right: 12px;
+        font-size: 1.4rem;
+    }
+
+
+    footer .footer-box .a-link{
+        line-height: 2.1;
     }
 }
 
@@ -563,12 +804,46 @@ header .nav-closeBtn{
         margin-bottom: 30px;
     }
 
+    .blog .blog-card{
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+    .blog .container .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+   
+    footer .footer-box{
+        width: 18rem;
+    }
+    footer .f-width{
+        width: 30rem;
+    }
+    footer .footer-box h2{
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    footer .logo{
+        padding-top: 2.5rem;
+    }
+    footer .footer-box .a-link{
+        line-height: 1.9;
+    }
 
 }
 
 @media (max-width:540px){
     #service{
         padding-top: 20rem;
+    }
+    .leading .row .leading-text h1{
+        font-size: 2.8rem;
+    }
+    .leading .row .leading-text h1::after{
+        top: 5rem;
+        left: 0;
     }
 }
 @media (max-width:450px){
@@ -609,6 +884,20 @@ header .nav-closeBtn{
     .service .service-detail {
         max-width: 100%;
     }
+
+
+    .blog .blog-card{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .blog .blog-card .image{
+        height: 27rem;
+    }
+
+
+    footer .f-width{
+        width: 100%;
+    }
 }
 
 @media (max-width:420px){
@@ -641,7 +930,14 @@ header .nav-closeBtn{
     .section-title{
         margin-top: 20rem;
     }
+    
+    .leading .row .leading-text h1{
+        font-size: 2.2rem;
+    }
+
 }
+
+
 @media (max-width:320px){
     .hero .hero-box .hero-text{
         margin-top: 10rem;
