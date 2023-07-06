@@ -2,9 +2,13 @@ import React from "react";
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero";
 import Service from "./Component/Service";
+
+import Customer from "./Component/Customer";
+
 import Leading from "./Component/Leading";
 import Article from "./Component/Article";
 import Footer from "./Component/Footer";
+
 
 
 function App() {
@@ -13,9 +17,13 @@ function App() {
       <Navbar />
       <Hero/>
       <Service/>
+
+      <Customer/>
+
       <Leading/>
       <Article/>
       <Footer/>
+
     </React.Fragment>
   );
 }

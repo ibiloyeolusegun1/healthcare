@@ -79,7 +79,7 @@ p{
     text-align: center;
     color: var(--black);
     position: relative;
-    width: 200px;
+    width: 500px;
     margin: 0 auto;
     margin-bottom: 45px;
 }
@@ -90,7 +90,7 @@ p{
     height: 0.25rem;
     background-color: var(--black);
     bottom: -2rem;
-    left: 8rem;
+    left: 23rem;
 }
 .row{
     display: flex;
@@ -232,6 +232,105 @@ header .nav-closeBtn{
     text-align: center;
 }
 
+
+/*==================== Customer Section ===================*/
+.customer{
+    height: 80vh;
+}
+.customer .container{
+    position: relative;
+    background-color: var(--main-color);
+    padding: 40px 40px 10px 40px;
+    border-radius: 20px;
+    /* overflow-x: hidden; */
+    height: 38rem;
+    max-height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.customer .container h2{
+    color: #ecf3f7;
+}
+.customer .container h2::after{
+    content: '';
+    background-color: #ecf3f7;
+}
+.customer .container .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+    background-color: var(--main-color);
+    padding: 20px 40px 0px 40px;
+    border-radius: 20px;
+}
+.customer .container .card-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 36%;
+    max-width: 36%;
+}
+.customer .container .card-inner img{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+}
+.customer .container .card-inner h2{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #f0faf6;
+    padding-bottom: 10px;
+}
+.customer .container .card-inner p{
+    color: #bed6df;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.customer .container .card-detail{
+    flex: 0 0 46%;
+    max-width: 46%;
+}
+.customer .container .card-detail p{
+    color: #bed6df;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.customer-Swiper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.swiper-pagination-bullet{
+    /* margin-top: 20rem; */
+}
+.customer-button{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: -.5rem;
+    left: 40%;
+    z-index: 100;
+}
+.customer-button button{
+    gap: 3rem;
+    padding: 4px;
+    margin-right: 14rem;
+    background: none;
+    color: #a9cdf0;
+    font-size: 1.8rem;
+}
+.customer-button button:focus{
+    color: var(--main-color);
+=======
 /*==================== Leading Section ===================*/
 #leading{
     padding-top: 15rem;
@@ -475,7 +574,25 @@ footer .footer-box .a-link:hover{
         max-width: 90%;
         margin-bottom: 38px;
     }
+  }
 
+    .customer .container .card-inner{
+        flex-direction: column;
+    }
+    .customer .container .card-inner{
+        flex: 0 0 28%;
+        max-width: 28%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .customer .container .card-inner img{
+        margin-bottom: 1rem;
+    }
+    .customer .container .card-detail{
+        flex: 0 0 65%;
+        max-width: 65%;
+  }
     .leading .row .image{
         width: 45rem;
         height: 40rem;
@@ -581,6 +698,43 @@ footer .footer-box .a-link:hover{
         padding: 40px 20px 30px 20px;
     }
 
+    .customer{
+        height: 100vh;
+    }
+    .customer .container .card-inner{
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .customer .container .card-detail{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .customer .container{
+        padding: 10px;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+    }
+    .customer .container  .section-title{
+        margin-top: 5rem;
+        margin-bottom: 45px;
+        width: 100%;
+    }
+    .customer .container .card{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .customer .container .card-detail p {
+        margin-top: 2rem;
+    }
+    .customer-button{
+       display: none;
     .leading .mobile-container .mobile-container{
         text-align: center;
     }
@@ -649,7 +803,6 @@ footer .footer-box .a-link:hover{
         max-width: 90%;
         margin-bottom: 30px;
     }
-
 
     .blog .blog-card{
         flex: 0 0 48%;
