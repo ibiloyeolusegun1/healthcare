@@ -308,9 +308,9 @@ header .nav-closeBtn{
     flex-wrap: wrap;
 }
 
-.swiper-pagination-bullet{
-    /* margin-top: 20rem; */
-}
+/*.swiper-pagination-bullet{
+    margin-top: 20rem; 
+}*/
 .customer-button{
     position: absolute;
     display: flex;
@@ -330,7 +330,7 @@ header .nav-closeBtn{
 }
 .customer-button button:focus{
     color: var(--main-color);
-=======
+}
 /*==================== Leading Section ===================*/
 #leading{
     padding-top: 15rem;
@@ -544,7 +544,7 @@ footer .footer-box .a-link:hover{
     }
 }
 
-@media only screen and (max-width:991px){
+@media only screen and (max-width:991px) {
     html{
         font-size: 55%;
     }
@@ -574,7 +574,6 @@ footer .footer-box .a-link:hover{
         max-width: 90%;
         margin-bottom: 38px;
     }
-  }
 
     .customer .container .card-inner{
         flex-direction: column;
@@ -592,7 +591,7 @@ footer .footer-box .a-link:hover{
     .customer .container .card-detail{
         flex: 0 0 65%;
         max-width: 65%;
-  }
+    }
     .leading .row .image{
         width: 45rem;
         height: 40rem;
@@ -735,6 +734,7 @@ footer .footer-box .a-link:hover{
     }
     .customer-button{
        display: none;
+    }
     .leading .mobile-container .mobile-container{
         text-align: center;
     }
