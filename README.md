@@ -18,12 +18,12 @@ React is a javascript library which is use for building websites user interface(
 + Find a bug
 
 
-## About Healtcare
+### About Healtcare
 + This Website helps in giving the neccessary details and Services provided by different hospitals in Nigeria, so a to help individual make enquiries at different hospitals in the country.
 + Visit this link https://healthcare-sigma.vercel.app/ to view the wesite.
 
 
-## Responsibility
+### Responsibility
 + Template Design
 + Bug Fixing
 + Responsive Design Check
@@ -32,25 +32,25 @@ React is a javascript library which is use for building websites user interface(
 + Front End Development
 
 
-## Installation
+### Installation
 
-### System Requirement
+#### System Requirement
 + git (latest CLI)
 + vscode
 + nodejs 
 
-### Installation command
+#### Installation command
 + git clone https://github.com/ibiloyeolusegun1/healthcare.git
 
-## Dependencies
+### Dependencies
 + Basically this website is meant to be a website for information about all hospital in Nigeria which will be upgraded in future, in other to see what services are provided by each hospital, which will help in submitting enquiry for services available in each hospital.
 + React
 + Targetted Menu For Mobile Devices
 + CSS3
 + Smooth Scroll
 
-## Contributor
+### Contributor
 This project was acheived with the help of **Daniel Alabuja**
 
-## Find a bug?
+### Find a bug?
 If you found an issue with this project or would like to notify me on an improvement on this project, i wll be glad to work on them.
