@@ -12,7 +12,6 @@ React is a javascript library which is use for building websites user interface(
 ## TABLE OF CONTENT
 + About Healthcare
 + Responsibility
-+ Installation
 + Dependencies
 + Find a bug
 
@@ -31,19 +30,10 @@ React is a javascript library which is use for building websites user interface(
 + Front End Development
 
 
-### Installation
-
-#### System Requirement
-+ git (latest CLI)
-+ vscode
-+ nodejs 
-
-#### Installation command
-+ git clone https://github.com/ibiloyeolusegun1/healthcare.git
-
 ### Dependencies
 + Basically this website is meant to be a website for information about all hospital in Nigeria which will be upgraded in future, in other to see what services are provided by each hospital, which will help in submitting enquiry for services available in each hospital.
 + React
++ nodejs 
 + Targetted Menu For Mobile Devices
 + CSS3
 + Smooth Scroll
