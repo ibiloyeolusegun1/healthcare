@@ -14,7 +14,6 @@ React is a javascript library which is use for building websites user interface(
 + Responsibility
 + Installation
 + Dependencies
-+ Contributor
 + Find a bug
 
 
@@ -49,8 +48,6 @@ React is a javascript library which is use for building websites user interface(
 + CSS3
 + Smooth Scroll
 
-### Contributor
-This project was acheived with the help of **Daniel Alabuja**
 
 ### Find a bug?
 If you found an issue with this project or would like to notify me on an improvement on this project, i wll be glad to work on them.
